@@ -20,7 +20,7 @@ class _ListadoNoticias extends State<ListadoNoticias> {
         ),
       ),
       body: FutureBuilder<List<noticias_model.Datum>>(
-        future: noticiasProvider().fetchNews(),
+        future: NoticiasProvider().fetchNews(),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
             List<noticias_model.Datum> items = snapshot.data!;

@@ -3,7 +3,7 @@ import 'dart:convert';
 
 import 'package:appflutter/models/noticias_model.dart';
 
-class noticiasProvider {
+class NoticiasProvider {
   // Funcion que retorna listado de Noticias
   Future<List<Datum>> fetchNews() async {
     String jsonString =

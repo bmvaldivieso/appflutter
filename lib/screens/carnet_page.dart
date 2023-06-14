@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CarnetPage extends StatelessWidget {
@@ -71,7 +70,7 @@ class CarnetPage extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 40),
+              const SizedBox(height: 40),
               Image.asset(
                 'assets/images/profile-avatar.png',
                 width: 160,

@@ -1,3 +1,4 @@
+import 'package:appflutter/screens/listado_pokemons.dart';
 import 'package:flutter/material.dart';
 import 'package:appflutter/screens/carnet_page.dart';
 
@@ -15,11 +16,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: const MenuPage(),
       routes: {
         '/contador': (BuildContext context) => const CounterPage(),
         '/carnet': (BuildContext context) => const CarnetPage(),
-        '/noticias': (BuildContext context) => ListadoNoticias(),
+        '/noticias': (BuildContext context) => const ListadoNoticias(),
+        '/pokemons': (BuildContext context) => ListadoPokemons()
       },
     );
   }

@@ -20,7 +20,7 @@ class MenuPage extends StatelessWidget {
                       Navigator.pushNamed(context, '/contador');
                     },
                     icon: const Icon(Icons.alarm_add_rounded),
-                    label: const Text("Ir contador"),
+                    label: const Text("Ir a contador"),
                   ),
                   ElevatedButton(
                     onPressed: () {
@@ -45,6 +45,19 @@ class MenuPage extends StatelessWidget {
                         Icon(Icons.newspaper),
                         SizedBox(width: 10),
                         Text("Ir a Noticias"),
+                      ],
+                    ),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/pokemons');
+                    },
+                    child: const Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Icon(Icons.assignment_rounded),
+                        SizedBox(width: 10),
+                        Text("Ir a Lista Pokemons"),
                       ],
                     ),
                   ),
